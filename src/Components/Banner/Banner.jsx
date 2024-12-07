@@ -1,7 +1,7 @@
 import React from "react";
 import "./Banner.scss";
 
-// composant Banner
+// composant Baner
 const Banner = ({ page, txt }) => (
   // La div principale représente la bannière. Elle a des classes CSS dynamiques en fonction des props.
   <div className={`banner banner--mobile banner--${page}`}>
