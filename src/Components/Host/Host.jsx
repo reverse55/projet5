@@ -2,7 +2,7 @@ import React from "react";
 import "./Host.scss";
 
 const Host = ({ name, picture }) => {
-  // On découpe le nom complet en prénom et nom de famille
+  // découpe le nom complet en prénom et nom de famille
   const [firstName, lastName] = name.split(" ");
 
   return (

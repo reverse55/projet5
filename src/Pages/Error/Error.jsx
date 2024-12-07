@@ -2,7 +2,7 @@ import React from "react";
 import "./Error.scss"; 
 import { Link } from "react-router-dom"; // Importation de Link pour la navigation entre les pages
 
-// Composant pour afficher la page d'erreur
+// Composant por afficher la page d'erreur
 const Error = () => {
   // Déclaration des messages de la page d'erreur
   const errorMessage = "Oups! La page que vous demandez n'existe pas."; // Message d'erreur

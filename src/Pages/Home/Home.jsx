@@ -5,7 +5,7 @@ import HomeData from "../../Data/dataLogement.json";
 
 import "./Home.scss";  
 
-// Définition du composant Home
+// Définition composant Home
 const Home = () => (
   <main className="home"> 
   {/* Élément principal de la page, avec la classe CSS "home" */}
