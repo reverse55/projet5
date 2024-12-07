@@ -1,0 +1,19 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: -70px;
+}
+
+.dropdown {
+  max-width: 1025px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  /* Media Queries */
+  @media all and (min-width: 0px) and (max-width: 768px) {
+    .about {display: flex;
+      flex-direction: column;
+    }
+  } 

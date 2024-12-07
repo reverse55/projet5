@@ -1,0 +1,59 @@
+$primary-color: #f7f7f7;
+
+.home { 
+  // Main container styles
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    background: $primary-color;
+    border-radius: 25px;
+    padding: 50px;
+    margin-top: 50px;
+  }
+}
+
+.card {
+  padding: 20px;
+}
+
+
+
+
+
+// Mobile
+@media (max-width: 1050px) {
+  .home {
+    &-container {
+      gap: 20px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .card {
+    flex-basis: 95%;
+    min-height: 255px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .home {
+    &-container {
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
+  .card {
+    flex-basis: 95%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  main.home {
+    margin-top: -50px;
+  }
+}

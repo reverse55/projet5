@@ -1,0 +1,133 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+
+  // Styles du bouton du dropdown
+  &-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: #ff6060;
+    color: white;
+    font-weight: 700;
+    height: 50px;
+    border-radius: 5px;
+
+    &-arrow {
+      margin-left: 10px;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+
+    // Styles pour le bouton du dropdown "About"
+    &--about {
+      font-size: 24px;
+      font-weight: 700;
+
+      &-arrow--about {
+        width: 24px;
+      }
+    }
+
+    // Styles pour le bouton du dropdown "Logement"
+    &--logement {
+      font-size: 18px;
+
+      &-arrow--logement {
+        width: 18px;
+      }
+    }
+  }
+
+  // Rotation de la flèche quand le dropdown est ouvert
+  &-button-arrow--open {
+    transform: rotate(180deg);
+  }
+
+  // Styles de la liste déroulante
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0 10px; 
+    background: #f7f7f787;
+    border-radius: 5px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    z-index: -1;
+
+    // Styles lorsque le dropdown est ouvert
+    &--open {
+      height: auto;
+      opacity: 1;
+      transform: translateY(0);
+      padding-top: 20px; 
+      margin-bottom: 20px; 
+    }
+
+    // Styles des éléments de la liste
+    &-item {
+      margin: 20px 20px; 
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+    }
+
+    // Styles pour les éléments de la liste "About"
+    &-item--about {
+      font-size: 18px;
+    }
+
+    // Styles pour les éléments de la liste "Logement"
+    &-item--logement {
+      margin: 5px 15px; 
+      font-size: 18px;
+    }
+  }
+}
+
+// Mobile
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .dropdown {
+    // Styles des éléments de la liste pour les petits écrans
+    &-list-item {
+      font-size: 12px;
+      font-weight: 400;
+      margin: 1px 21px; 
+    }
+
+    // Styles du bouton pour les petits écrans
+    &-button {
+      font-size: 14px;
+      height: 30px;
+      border-radius: 5px;
+
+      &-arrow {
+        width: 22px;
+      }
+
+      // Styles du bouton "About" pour les petits écrans
+      &--about {
+        font-size: 14px;
+      }
+
+      // Styles du bouton "Logement" pour les petits écrans
+      &--logement {
+        font-size: 13px;
+      }
+    }
+
+    // Ajustement des éléments de la liste pour le dropdown "About" sur petits écrans
+    .dropdown-list-item--about {
+      font-size: 12px;
+    }
+
+    // Ajustement des éléments de la liste pour le dropdown "Logement" sur petits écrans
+    .dropdown-list-item--logement {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  &-navbar {
+    display: flex;
+    gap: 50px;
+
+    &-link {
+      font-weight: 500;
+      font-size: 24px;
+      text-decoration: none;
+      color: #000000;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+
+  /* Media Queries */
+  @media all and (min-width: 0px) and (max-width: 768px) {
+    margin-bottom: 5px;
+
+    /* Uniformiser la hauteur et taille du logo sur mobile */
+    &-logo {
+      max-width: 145px;
+      width: 100%;
+      height: auto;
+    }
+
+    &-navbar {
+      display: flex;
+      gap: 30px;
+
+      &-link {
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    margin:0 ;
+
+    &-navbar {
+      gap: 7px;
+    }
+  }
+}
+

@@ -1,0 +1,65 @@
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$monospace-font-stack: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+$max-width: 1320px;
+$gap-large: 40px;
+$gap-small: 0px;
+$padding-large: 40px;
+$padding-small: 20px;
+
+@mixin box-sizing-reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  @include box-sizing-reset;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-height: 100vh;
+}
+
+header,
+main {
+  max-width: 1320px;
+  margin: auto;
+  padding: 40px;
+
+  @media all and (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+footer {
+  @media all and (max-width: 768px) {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,26 @@
+.tagValue-container {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #ff6060;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  min-width: 115px;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+    padding: 3px 6px;
+    border-radius: 5px;
+    min-width: 84px;
+  }
+}

@@ -1,0 +1,22 @@
+.stars {
+  margin-top:15px; 
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+
+  @media (max-width: 768px) {
+    gap: 7px;
+  }
+}
+
+.star-icone {
+  width: 20px; 
+  height: 20px;
+  object-fit: contain;
+
+  @media (max-width: 768px) {
+    width: 13px; 
+    height: 13px;
+  }
+}
+

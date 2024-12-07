@@ -1,0 +1,45 @@
+$primary-color: #ff6060;
+$secondary-color: #000000;
+
+.error {
+  display: flex;
+  flex-direction: column;
+
+  &-heading {
+    font-weight: 700;
+    font-size: 288px;
+    text-align: center;
+    color: $primary-color;
+  }
+
+  &-paragraph {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    text-align: center;
+    color: $primary-color;
+    padding-bottom: 50px;
+  }
+
+  &-link {
+    font-size: 18px;
+    line-height: 142.6%;
+    text-align: center;
+    color: $secondary-color;
+    padding-bottom: 50px;
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .error {
+    &-heading {
+      font-size: 96px;
+    }
+    &-paragraph {
+      font-size: 18px;
+    }
+    &-link {
+      font-size: 14px;
+    }
+  }
+}
